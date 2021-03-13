@@ -22,7 +22,7 @@ from . import *
 
 # ================================================#
 notmine = "This bot is for {}".format(OWNER_NAME)
-ULTROID_PIC = "https://telegra.ph/file/11245cacbffe92e5d5b14.jpg"
+ULTROID_PIC = "https://telegra.ph/file/eaa323fdee590ac58cc98.jpg"
 helps = """
 [Laciaa Support](t.me/laciaa_bot)
 
@@ -59,12 +59,14 @@ async def e(o):
         uptime = grt((time.time() - start_time))
         ALIVEMSG = """
 **Yahaha Wahyu...**\n
+━━━━━ • ✿ • ━━━━━
 ✵ **Owner** - `{}`
-✵ **Ultroid** - `{}`
+✵ **Version** - `{}`
 ✵ **UpTime** - `{}`
 ✵ **Python** - `{}`
 ✵ **Telethon** - `{}`
 ✵ **Branch** - `{}`
+━━━━━ • ✿ • ━━━━━
 """.format(
             OWNER_NAME,
             ultroid_version,
@@ -75,22 +77,22 @@ async def e(o):
         )
         res = [
             b.article(
-                title="Ultroid Userbot",
-                url="https://t.me/TeamUltroid",
-                description="Userbot | Telethon ",
+                title="Yahaha Wahyu",
+                url="https://t.me/Sihyeon3",
+                description="Why | Try ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
                 buttons=[
-                    [Button.url(text="Support Group", url="t.me/UltroidSupport")],
+                    [Button.url(text="Support Group", url="t.me/joinchat/WBMKhp4g42xF_b1B")],
                     [
                         Button.url(
-                            text="Repo", url="https://github.com/Teamultroid/Ultroid"
+                            text="Contact", url="https://t.me/Sihyeon3"
                         )
                     ],
                 ],
             )
         ]
-        await o.answer(res, switch_pm=f"👥 ULTROID PORTAL", switch_pm_param="start")
+        await o.answer(res, switch_pm=f"🌀 PORTAL ISEKAI", switch_pm_param="start")
 
 
 if Var.BOT_USERNAME is not None and asst is not None:
