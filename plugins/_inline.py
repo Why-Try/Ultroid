@@ -119,23 +119,23 @@ if Var.BOT_USERNAME is not None and asst is not None:
                 description="Help Menu - UserBot | Telethon ",
                 url="https://t.me/TheUltroid",
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
-                text=f"** Bᴏᴛ Oғ {OWNER_NAME}\n\nMᴀɪɴ Mᴇɴᴜ\n\nPʟᴜɢɪɴs ~ {len(PLUGINS) - 4}\nAᴅᴅᴏɴs ~ {len(ADDONS)}\nTᴏᴛᴀʟ Cᴏᴍᴍᴀɴᴅs ~ {cmd}**",
+                text=f"** 𝔅𝔬𝔱 𝔬𝔣 {OWNER_NAME}\n\n𝔐𝔞𝔦𝔫 𝔐𝔢𝔫𝔲\n\n𝔓𝔩𝔲𝔤𝔦𝔫𝔰 ~ {len(PLUGINS) - 4}\n𝔄𝔡𝔡𝔬𝔫𝔰 ~ {len(ADDONS)}\n𝕿𝖔𝖙𝖆𝖑 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘 ~ {cmd}**",
                 buttons=[
                     [
-                        Button.inline("• Pʟᴜɢɪɴs", data="hrrrr"),
-                        Button.inline("• Aᴅᴅᴏɴs", data="frrr"),
+                        Button.inline("𝔓𝔩𝔲𝔤𝔦𝔫𝔰", data="hrrrr"),
+                        Button.inline("𝔄𝔡𝔡𝔬𝔫𝔰", data="frrr"),
                     ],
                     [
-                        Button.inline("Oᴡɴᴇʀ•ᴛᴏᴏʟꜱ", data="ownr"),
-                        Button.inline("Iɴʟɪɴᴇ•Pʟᴜɢɪɴs", data="inlone"),
+                        Button.inline("𝔒𝔴𝔫𝔢𝔯 𝔗𝔬𝔬𝔩𝔰", data="ownr"),
+                        Button.inline("ℑ𝔫𝔩𝔦𝔫𝔢 𝔓𝔩𝔲𝔤𝔦𝔫𝔰", data="inlone"),
                     ],
                     [
                         Button.url(
-                            "⚙️Sᴇᴛᴛɪɴɢs⚙️",
+                            "⚙️𝔖𝔢𝔱𝔱𝔦𝔫𝔤𝔰⚙️",
                             url=f"https://t.me/{bnn}?start={ultroid_bot.me.id}",
                         )
                     ],
-                    [Button.inline("••Cʟᴏꜱᴇ••", data="close")],
+                    [Button.inline("ℭ𝔩𝔬𝔰𝔢", data="close")],
                 ],
             )
             await event.answer([result] if result else None)
