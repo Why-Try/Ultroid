@@ -24,31 +24,29 @@ from . import *
 notmine = "This bot is for {}".format(OWNER_NAME)
 ULTROID_PIC = "https://telegra.ph/file/11245cacbffe92e5d5b14.jpg"
 helps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[Laciaa Support](t.me/laciaa_bot)
 
-**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
+**𝔥𝔢𝔩𝔭 𝔪𝔢𝔫𝔲 𝔬𝔣 {}.
 
-Pʟᴜɢɪɴs ~ {}**
+𝔭𝔩𝔲𝔤𝔦𝔫𝔰 ⇀ {}**
 """
 
 add_ons = udB.get("ADDONS")
 if add_ons:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[Laciaa Support](t.me/laciaa_bot)
 
-**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
+**𝔥𝔢𝔩𝔭 𝔪𝔢𝔫𝔲 𝔬𝔣 {}.
 
-Aᴅᴅᴏɴs ~ {}**
+𝔞𝔡𝔡𝔬𝔫𝔰 ⇀ {}**
 """
 else:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[Laciaa Support](t.me/laciaa_bot)
 
-**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
+**𝔥𝔢𝔩𝔭 𝔪𝔢𝔫𝔲 𝔬𝔣 {}.
 
-Aᴅᴅᴏɴs ~ {}
-
-Gᴏ Aɴᴅ Aᴅᴅ ADDONS Vᴀʀ Wɪᴛʜ Vᴀʟᴜᴇ Tʀᴜᴇ**
+𝔞𝔡𝔡𝔬𝔫𝔰 ⇀ {}**
 """
 # ============================================#
 
@@ -60,7 +58,7 @@ async def e(o):
         b = o.builder
         uptime = grt((time.time() - start_time))
         ALIVEMSG = """
-**The Ultroid Userbot...**\n
+**Yahaha Wahyu...**\n
 ✵ **Owner** - `{}`
 ✵ **Ultroid** - `{}`
 ✵ **UpTime** - `{}`
@@ -117,17 +115,17 @@ if Var.BOT_USERNAME is not None and asst is not None:
             result = builder.article(
                 title="Help Menu",
                 description="Help Menu - UserBot | Telethon ",
-                url="https://t.me/TheUltroid",
+                url="https://t.me/Sihyeon3",
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
-                text=f"** 𝔅𝔬𝔱 𝔬𝔣 {OWNER_NAME}\n\n𝔐𝔞𝔦𝔫 𝔐𝔢𝔫𝔲\n\n𝔓𝔩𝔲𝔤𝔦𝔫𝔰 ~ {len(PLUGINS) - 4}\n𝔄𝔡𝔡𝔬𝔫𝔰 ~ {len(ADDONS)}\n𝕿𝖔𝖙𝖆𝖑 𝕮𝖔𝖒𝖒𝖆𝖓𝖉𝖘 ~ {cmd}**",
+                text=f"** 𝔅𝔬𝔱 𝔬𝔣 {OWNER_NAME}\n\n𝔪𝔞𝔦𝔫 𝔪𝔢𝔫𝔲\n\n𝔭𝔩𝔲𝔤𝔦𝔫𝔰 ⇀ {len(PLUGINS) - 4}\n𝔞𝔡𝔡𝔬𝔫𝔰 ⇀ {len(ADDONS)}\n𝔗𝔬𝔱𝔞𝔩 ℭ𝔬𝔪𝔪𝔞𝔫𝔡𝔰 ⇀ {cmd}**",
                 buttons=[
                     [
-                        Button.inline("𝔓𝔩𝔲𝔤𝔦𝔫𝔰", data="hrrrr"),
-                        Button.inline("𝔄𝔡𝔡𝔬𝔫𝔰", data="frrr"),
+                        Button.inline("𝔭𝔩𝔲𝔤𝔦𝔫𝔰", data="hrrrr"),
+                        Button.inline("𝔞𝔡𝔡𝔬𝔫𝔰", data="frrr"),
                     ],
                     [
                         Button.inline("𝔒𝔴𝔫𝔢𝔯 𝔗𝔬𝔬𝔩𝔰", data="ownr"),
-                        Button.inline("ℑ𝔫𝔩𝔦𝔫𝔢 𝔓𝔩𝔲𝔤𝔦𝔫𝔰", data="inlone"),
+                        Button.inline("ℑ𝔫𝔩𝔦𝔫𝔢 𝔭𝔩𝔲𝔤𝔦𝔫𝔰", data="inlone"),
                     ],
                     [
                         Button.url(
