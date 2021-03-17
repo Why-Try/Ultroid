@@ -77,7 +77,7 @@ async def e(o):
         )
         res = [
             b.article(
-                title="Yahaha Wahyu",
+                title="Callystaa",
                 url="https://t.me/Sihyeon3",
                 description="Why | Try ",
                 text=ALIVEMSG,
@@ -115,8 +115,8 @@ if Var.BOT_USERNAME is not None and asst is not None:
             else:
                 bnn = bn
             result = builder.article(
-                title="Help Menu",
-                description="Help Menu - UserBot | Telethon ",
+                title="Callystaa",
+                description="Why | Try ",
                 url="https://t.me/Sihyeon3",
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
                 text=f"** 𝔅𝔬𝔱 𝔬𝔣 {OWNER_NAME}\n\n𝔪𝔞𝔦𝔫 𝔪𝔢𝔫𝔲\n\n𝔭𝔩𝔲𝔤𝔦𝔫𝔰 ⇀ {len(PLUGINS) - 4}\n𝔞𝔡𝔡𝔬𝔫𝔰 ⇀ {len(ADDONS)}\n𝔗𝔬𝔱𝔞𝔩 ℭ𝔬𝔪𝔪𝔞𝔫𝔡𝔰 ⇀ {cmd}**",
@@ -145,7 +145,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             link_raw = f"https://nekobin.com/raw/{ok}"
             result = builder.article(
                 title="Paste",
-                text="Pᴀsᴛᴇᴅ Tᴏ Nᴇᴋᴏʙɪɴ!",
+                text="Paste To Nekobin!",
                 buttons=[
                     [
                         Button.url("NekoBin", url=f"{link}"),
@@ -163,11 +163,11 @@ if Var.BOT_USERNAME is not None and asst is not None:
         await event.edit(
             buttons=[
                 [
-                    Button.inline("•Pɪɴɢ•", data="pkng"),
-                    Button.inline("•Uᴘᴛɪᴍᴇ•", data="upp"),
+                    Button.inline("𝔭𝔦𝔫𝔤", data="pkng"),
+                    Button.inline("𝔲𝔭𝔱𝔦𝔪𝔢", data="upp"),
                 ],
-                [Button.inline("•Rᴇsᴛᴀʀᴛ•", data="rstrt")],
-                [Button.inline("<- Bᴀᴄᴋ", data="open")],
+                [Button.inline("𝔯𝔢𝔰𝔱𝔞𝔯𝔱", data="rstrt")],
+                [Button.inline("↩ 𝔅𝔞𝔠𝔨", data="open")],
             ],
         )
 
@@ -176,13 +176,13 @@ if Var.BOT_USERNAME is not None and asst is not None:
         start = datetime.now()
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        pin = f"🌋Pɪɴɢ = {ms}ms"
+        pin = f"𝔭𝔦𝔫𝔤 : {ms}ms"
         await event.answer(pin, cache_time=0, alert=True)
 
     @callback("upp")
     async def _(event):
         uptime = grt((time.time() - start_time))
-        pin = f"🙋Uᴘᴛɪᴍᴇ = {uptime}"
+        pin = f"𝔲𝔭𝔱𝔦𝔪𝔢 : {uptime}"
         await event.answer(pin, cache_time=0, alert=True)
 
     @callback("inlone")
@@ -191,56 +191,28 @@ if Var.BOT_USERNAME is not None and asst is not None:
         button = [
             [
                 Button.switch_inline(
-                    "Sᴇɴᴅ Oғғɪᴄɪᴀʟ Pʟᴜɢɪɴs",
+                    "𝔒𝔣𝔣𝔦𝔠𝔦𝔞𝔩 𝔭𝔩𝔲𝔤𝔦𝔫𝔰",
                     query="send",
                     same_peer=True,
                 )
             ],
             [
                 Button.switch_inline(
-                    "Pʟᴀʏ Sᴛᴏʀᴇ Aᴘᴘs",
-                    query="app telegram",
+                    "𝔊𝔬𝔬𝔤𝔩𝔢",
+                    query="http://wahyutry.rf.gd",
                     same_peer=True,
                 )
             ],
             [
                 Button.switch_inline(
-                    "Mᴏᴅᴅᴇᴅ Aᴘᴘs",
-                    query="mods minecraft",
-                    same_peer=True,
-                )
-            ],
-            [
-                Button.switch_inline(
-                    "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ",
-                    query="go TeamUltroid",
-                    same_peer=True,
-                )
-            ],
-            [
-                Button.switch_inline(
-                    "Sᴇᴀʀᴄʜ Oɴ Yᴀʜᴏᴏ",
-                    query="yahoo TeamUltroid",
-                    same_peer=True,
-                )
-            ],
-            [
-                Button.switch_inline(
-                    "YᴏᴜTᴜʙᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ",
-                    query="Ed Sheeran Perfect",
-                    same_peer=True,
-                )
-            ],
-            [
-                Button.switch_inline(
-                    "CʟɪᴘAʀᴛ Sᴇᴀʀᴄʜ",
-                    query="clipart frog",
+                    "𝔶𝔬𝔲𝔱𝔲𝔟𝔢",
+                    query="Pamungkas To The Bone",
                     same_peer=True,
                 )
             ],
             [
                 Button.inline(
-                    "<- Bᴀᴄᴋ",
+                    "↩ 𝔅𝔞𝔠𝔨",
                     data="open",
                 )
             ],
@@ -263,7 +235,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             await event.edit(f"{halp}", buttons=buttons, link_preview=False)
         else:
             await event.answer(
-                "• Iɴsᴛᴀʟʟ A Pʟᴜɢɪɴ Mᴀɴᴜᴀʟʟʏ Oʀ Aᴅᴅ Vᴀʀ ADDONS Wɪᴛʜ Vᴀʟᴜᴇ True",
+                "↪ Install a Plugin Manually or Add Vars Addons With Value True",
                 cache_time=0,
                 alert=True,
             )
@@ -343,19 +315,19 @@ if Var.BOT_USERNAME is not None and asst is not None:
             bnn = bn
         buttons = [
             [
-                Button.inline("• Pʟᴜɢɪɴs ", data="hrrrr"),
-                Button.inline("• Aᴅᴅᴏɴs", data="frrr"),
+                Button.inline("𝔭𝔩𝔲𝔤𝔦𝔫𝔰", data="hrrrr"),
+                Button.inline("𝔞𝔡𝔡𝔬𝔫𝔰", data="frrr"),
             ],
             [
-                Button.inline("Oᴡɴᴇʀ•Tᴏᴏʟꜱ", data="ownr"),
-                Button.inline("Iɴʟɪɴᴇ•Pʟᴜɢɪɴs", data="inlone"),
+                Button.inline("𝔒𝔴𝔫𝔢𝔯 𝔗𝔬𝔬𝔩𝔰", data="ownr"),
+                Button.inline("ℑ𝔫𝔩𝔦𝔫𝔢 𝔭𝔩𝔲𝔤𝔦𝔫𝔰", data="inlone"),
             ],
             [
                 Button.url(
-                    "⚙️Sᴇᴛᴛɪɴɢs⚙️", url=f"https://t.me/{bnn}?start={ultroid_bot.me.id}"
+                    "⚙️𝔖𝔢𝔱𝔱𝔦𝔫𝔤𝔰⚙️", url=f"https://t.me/{bnn}?start={ultroid_bot.me.id}"
                 )
             ],
-            [Button.inline("••Cʟᴏꜱᴇ••", data="close")],
+            [Button.inline("ℭ𝔩𝔬𝔰𝔢", data="close")],
         ]
         z = []
         for x in LIST.values():
@@ -363,7 +335,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
                 z.append(y)
         cmd = len(z) + 10
         await event.edit(
-            f"** Bᴏᴛ Oғ {OWNER_NAME}\n\nMᴀɪɴ Mᴇɴᴜ\n\nPʟᴜɢɪɴs ~ {len(PLUGINS) - 4}\nAᴅᴅᴏɴs ~ {len(ADDONS)}\nTᴏᴛᴀʟ Cᴏᴍᴍᴀɴᴅs ~ {cmd}**",
+            f"** 𝔅𝔬𝔱 𝔬𝔣 {OWNER_NAME}\n\n𝔪𝔞𝔦𝔫 𝔪𝔢𝔫𝔲\n\n𝔭𝔩𝔲𝔤𝔦𝔫𝔰 ⇀ {len(PLUGINS) - 4}\n𝔞𝔡𝔡𝔬𝔫𝔰 ⇀ {len(ADDONS)}\n𝔗𝔬𝔱𝔞𝔩 ℭ𝔬𝔪𝔪𝔞𝔫𝔡𝔰 ⇀ {cmd}**",
             buttons=buttons,
             link_preview=False,
         )
@@ -372,8 +344,8 @@ if Var.BOT_USERNAME is not None and asst is not None:
     @owner
     async def on_plug_in_callback_query_handler(event):
         await event.edit(
-            "**Mᴇɴᴜ Hᴀs Bᴇᴇɴ Cʟᴏsᴇᴅ**",
-            buttons=Button.inline("Oᴘᴇɴ Mᴀɪɴ Mᴇɴᴜ Aɢᴀɪɴ", data="open"),
+            "**Menu Telah Ditutup**",
+            buttons=Button.inline("Buka Menu Utama", data="open"),
         )
 
     @callback(
@@ -394,14 +366,14 @@ if Var.BOT_USERNAME is not None and asst is not None:
             reply_pop_up_alert = "{} has no detailed help...".format(plugin_name)
         else:
             reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n© @TheUltroid"
+        reply_pop_up_alert += "\n© @Sihyeon3"
         try:
             if event.query.user_id in sed:
                 await event.edit(
                     reply_pop_up_alert,
                     buttons=[
-                        Button.inline("<- Bᴀᴄᴋ", data="back"),
-                        Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+                        Button.inline("↩ 𝔅𝔞𝔠𝔨", data="back"),
+                        Button.inline("ℭ𝔩𝔬𝔰𝔢", data="close"),
                     ],
                 )
             else:
@@ -445,14 +417,14 @@ if Var.BOT_USERNAME is not None and asst is not None:
             reply_pop_up_alert = "{} has no detailed help...".format(plugin_name)
         else:
             reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n© @TheUltroid"
+        reply_pop_up_alert += "\n© @Sihyeon3"
         try:
             if event.query.user_id in sed:
                 await event.edit(
                     reply_pop_up_alert,
                     buttons=[
-                        Button.inline("<- Bᴀᴄᴋ", data="buck"),
-                        Button.inline("••Cʟᴏꜱᴇ••", data="close"),
+                        Button.inline("↩ 𝔅𝔞𝔠𝔨", data="buck"),
+                        Button.inline("ℭ𝔩𝔬𝔰𝔢", data="close"),
                     ],
                 )
             else:
@@ -470,7 +442,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
     if emoji:
         multi, mult2i = emoji, emoji
     else:
-        multi, mult2i = "✘", "✘"
+        multi, mult2i = "◈", "◈"
     helpable_plugins = []
     global upage
     upage = page_number
@@ -498,18 +470,18 @@ def paginate_help(page_number, loaded_plugins, prefix):
         ] + [
             (
                 Button.inline(
-                    "<- Pʀᴇᴠɪᴏᴜs", data="{}_prev({})".format(prefix, modulo_page)
+                    "<<<", data="{}_prev({})".format(prefix, modulo_page)
                 ),
-                Button.inline("-Bᴀᴄᴋ-", data="open"),
+                Button.inline("-Back-", data="open"),
                 Button.inline(
-                    "Nᴇxᴛ ->", data="{}_next({})".format(prefix, modulo_page)
+                    ">>>", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
     else:
         pairs = pairs[
             modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
-        ] + [(Button.inline("-Bᴀᴄᴋ-", data="open"),)]
+        ] + [(Button.inline("-Back-", data="open"),)]
     return pairs
 
 
@@ -520,7 +492,7 @@ def paginate_addon(page_number, loaded_plugins, prefix):
     if emoji:
         multi, mult2i = emoji, emoji
     else:
-        multi, mult2i = "✘", "✘"
+        multi, mult2i = "◈", "◈"
     helpable_plugins = []
     global addpage
     addpage = page_number
@@ -548,16 +520,16 @@ def paginate_addon(page_number, loaded_plugins, prefix):
         ] + [
             (
                 Button.inline(
-                    "<- Pʀᴇᴠɪᴏᴜs", data="{}_prev({})".format(prefix, modulo_page)
+                    "<<<", data="{}_prev({})".format(prefix, modulo_page)
                 ),
-                Button.inline("-Bᴀᴄᴋ-", data="open"),
+                Button.inline("-Back-", data="open"),
                 Button.inline(
-                    "Nᴇxᴛ ->", data="{}_next({})".format(prefix, modulo_page)
+                    ">>>", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
     else:
         pairs = pairs[
             modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
-        ] + [(Button.inline("-Bᴀᴄᴋ-", data="open"),)]
+        ] + [(Button.inline("-Back-", data="open"),)]
     return pairs
